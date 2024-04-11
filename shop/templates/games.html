@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+{% load shop_helper %}
+{% load static %}
+{% block main %}
+    <div class="container-fluid pt-5 pb-3">
+        <div class="row px-xl-5">
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                {% for ps3_games in playStation3_list %}
+                
+                <div class="product-item bg-light mb-4">
+                    <div class="product-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" style="height:200px;object-fit:contain" src="{{ ps3_games.image.url }}" alt="">
+                        
+                    </div>
+                    <div class="text-center py-4">
+                        <a class="h6 text-decoration-none text-truncate" href="{{ps3_games.get_absolute_url}}" >{{ ps3_games.title }}</a>
+                        <h5>{{ ps3_games.description }}</h5>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                {% for ps4_games in playStation4_list %}
+                
+                <div class="product-item bg-light mb-4">
+                    <div class="product-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" style="height:200px;object-fit:contain" src="{{ ps4_games.image.url }}" alt="">
+                        
+                    </div>
+                    <div class="text-center py-4">
+                        <a class="h6 text-decoration-none text-truncate" href="{{ps4_games.get_absolute_url}}" >{{ ps4_games.title }}</a>
+                        <h5>{{ ps4_games.description }}</h5>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                {% for ps5_games in playStation5_list %}
+                
+                <div class="product-item bg-light mb-4">
+                    <div class="product-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" style="height:200px;object-fit:contain" src="{{ ps5_games.image.url }}" alt="">
+                        
+                    </div>
+                    <div class="text-center py-4">
+                        <a class="h6 text-decoration-none text-truncate" href="{{ps5_games.get_absolute_url}}" >{{ ps5_games.title }}</a>
+                        <h5>{{ ps5_games.description }}</h5>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+        </div>
+    </div>
+{% endblock main %}
