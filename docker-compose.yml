@@ -13,7 +13,7 @@ services:
     volumes:
       - mydata:/var/lib/postgresql/data
     environment:
-      POSTGRES_PASSWORD: 12345
-      POSTGRES_DB: multishop_db
+      POSTGRES_PASSWORD: 1997
+      POSTGRES_DB: gameshop_db
 volumes:
   mydata: 
