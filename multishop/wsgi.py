@@ -16,3 +16,4 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'multishop.settings')
 dotenv.load_dotenv()
 
 application = get_wsgi_application()
+app = application
