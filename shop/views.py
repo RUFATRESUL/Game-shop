@@ -145,29 +145,7 @@ def child_game3(request):
     
     })
 
-def war_game3(request):
-    games_war3 = warGamesPs3.objects.all()
- 
-    return render(request, 'war_game3.html', {
-        'games_war3': games_war3,
-    
-    })
 
-def sport_game3(request):
-    games_sport3 = sportGamesPs3.objects.all()
-   
-    return render(request, 'sport_game3.html', {
-        'games_sport3': games_sport3,
-       
-    })
-
-def car_game3(request):
-    games_car3 = carGamesPs3.objects.all()
-    
-    return render(request, 'car_game3.html', {
-        'games_car3': games_car3,
-    
-    })
 
 def child_game4(request):
     games_child4 = childGamesPs4.objects.all()
@@ -179,29 +157,7 @@ def child_game4(request):
     
     })
 
-def war_game4(request):
-    games_war4 = warGamesPs4.objects.all()
- 
-    return render(request, 'war_game4.html', {
-        'games_war4': games_war4,
-    
-    })
 
-def sport_game4(request):
-    games_sport4 = sportGamesPs4.objects.all()
-   
-    return render(request, 'sport_game4.html', {
-        'games_sport4': games_sport4,
-       
-    })
-
-def car_game4(request):
-    games_car4 = carGamesPs4.objects.all()
-    
-    return render(request, 'car_game4.html', {
-        'games_car4': games_car4,
-    
-    })
 
 def child_game5(request):
     games_child5 = childGamesPs5.objects.all()
@@ -212,32 +168,6 @@ def child_game5(request):
       
     
     })
-
-def war_game5(request):
-    games_war5 = warGamesPs5.objects.all()
- 
-    return render(request, 'war_game5.html', {
-        'games_war5': games_war5,
-    
-    })
-
-def sport_game5(request):
-    games_sport5 = sportGamesPs5.objects.all()
-   
-    return render(request, 'sport_game5.html', {
-        'games_sport5': games_sport5,
-       
-    })
-
-def car_game5(request):
-    games_car5 = carGamesPs5.objects.all()
-    
-    return render(request, 'car_game5.html', {
-        'games_car5': games_car5,
-    
-    })
-
-
 
 
 def review(request,pk):
